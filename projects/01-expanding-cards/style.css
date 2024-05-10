@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  width: 100px;
+  height: 550px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  -webkit-transition: all 700ms ease-in;
+  cursor: pointer;
+  position: relative;
+  background-position: center; /*Para que la imagen este siempre centrada*/
+}
+
+.active {
+  width: 900px;
+  flex: 5;
+  cursor: default;
+}
+
+h3 {
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
