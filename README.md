@@ -11,3 +11,4 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 |  2  | [Progress steps](./projects/02-progress-steps/ "Progress steps")                                              |
 |  3  | [Rotating navigation animation](./projects/03-rotating-navigation-animation/ "Rotating navigation animation") |
 |  4  | [Hidden search widget](./projects/04-hidden-search-widget/ "Hidden search widget")                            |
+|  5  | [Blurry loading](./projects/05-blurry-loading/ "Blurry loading")                                              |
