@@ -7,6 +7,7 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 
 |  #  | Project                                                                                                       |
 | :-: | ------------------------------------------------------------------------------------------------------------- |
-|  1  | [Expanded Cards](./projects/01-expanding-cards/ "Expanding cards")                                            |
+|  1  | [Expanded cards](./projects/01-expanding-cards/ "Expanding cards")                                            |
 |  2  | [Progress steps](./projects/02-progress-steps/ "Progress steps")                                              |
-|  3  | [rotating navigation animation](./projects/03-rotating-navigation-animation/ "Rotating navigation animation") |
+|  3  | [Rotating navigation animation](./projects/03-rotating-navigation-animation/ "Rotating navigation animation") |
+|  4  | [Hidden search widget](./projects/04-hidden-search-widget/ "Hidden search widget")                            |
