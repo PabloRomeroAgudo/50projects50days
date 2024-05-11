@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --ps-color: rgba(87, 84, 236, 0.7);
+  --ps-button-color-hover: rgb(87, 84, 236);
+  --xbox-color: rgba(43, 43, 43, 0.8);
+  --xbox-button-color-hover: rgb(28, 122, 28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  transition: 1s ease-in-out;
+  position: relative;
+}
+
+.play {
+  background: url(ps.jpg);
+  background-size: cover;
+  
+  &:hover {
+    flex-grow: 7.5;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ps-color);
+  }
+}
+
+.xbox {
+  background: url(xbox.jpg);
+  background-size: cover;
+
+  &:hover {
+    flex-grow: 7.5;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--xbox-color);
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  transition: font-size 200ms;
+}
+
+button {
+  background: none;
+  border: 4px solid white;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 
+    width 200ms, height 200ms, font-size 200ms;
+  z-index: 1
+}
+
+.play button:hover {
+  border-color: var(--ps-button-color-hover);
+  background-color: var(--ps-button-color-hover);
+}
+
+.xbox button:hover {
+  border-color: var(--xbox-button-color-hover);
+  background-color: var(--xbox-button-color-hover);
+}
+
+@media (768px <= width <= 1100px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (768px >= width) {
+  .container {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+  }
+}
