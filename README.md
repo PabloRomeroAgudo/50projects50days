@@ -14,3 +14,4 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 |  5  | [Blurry loading](./projects/05-blurry-loading/ "Blurry loading")                                              |
 |  6  | [Scroll animation](./projects/06-scroll-animation/ "Scroll animation")                                        |
 |  7  | [Split landing page](./projects/07-split-landing-page/ "Split landing page")                                  |
+|  8  | [Form input wave](./projects/08-form-input-wave/ "Form input wave")                                           |
