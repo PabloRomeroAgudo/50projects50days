@@ -18,6 +18,7 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 |  9  | [Sound board](./projects/09-sound-board/ "Sound board")                            |
 | 10  | [Dad jokes](./projects/10-dad-jokes/ "Dad jokes")                                  |
 | 11  | [Event keycodes](./projects/11-event-keycodes/ "Event keycodes")                   |
+| 12  | [Faq collapse](./projects/12-faq-collapse/ "Faq collapse")                         |
 
 [^1]:
     If you hover the link it will show the name of the project if I was able to do it,
