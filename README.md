@@ -20,7 +20,8 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 | 11  | [Event keycodes](./projects/11-event-keycodes/ "Event keycodes")                   |
 | 12  | [Faq collapse](./projects/12-faq-collapse/ "Faq collapse")                         |
 | 13  | [Random choice picker](./projects/13-random-choice-picker/ "Random choice picker") |
-| 14  | [Animated naigation](./projects/14-animated-navigation/ ":(")                      |
+| 14  | [Animated navigation](./projects/14-animated-navigation/ ":(")                     |
+| 15  | [Increment counter](./projects/15-increment-counter/ "Increment counter")          |
 
 [^1]:
     If you hover the link it will show the name of the project if I was able to do it,
