@@ -24,6 +24,7 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 | 15  | [Increment counter](./projects/15-increment-counter/ "Increment counter")          |
 | 16  | [Drink water](./projects/16-drink-water/ "Drink water")                            |
 | 17  | [Movie app](./projects/17-movie-app/ ":/")                                         |
+| 18  | [Background slider](./projects/18-background-slider/ ":("                          |
 
 [^1]:
     If you hover the link it will show the name of the project if I was able to do it,
