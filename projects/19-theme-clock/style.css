@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: background-color 0.5s linear;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+button {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.clock {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.needle {
+  width: 3px;
+  height: 50%;
+  background: var(--primary-color);
+  transform-origin: bottom;
+  transition: transform 0.5s linear, background-color 0.5s linear,
+    color 0.5s linear;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+.hour {
+  height: 30%;
+}
+
+.second {
+  background: red;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid red;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.dot::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  transition: background-color 0.5s linear;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 300;
+  transition: color 0.5s linear, color 0.5s linear;
+}
+
+.date {
+  color: rgba(128, 128, 128, 0.8);
+  margin: 0;
+}
+
+.date .day-number {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  border-radius: 30px;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
