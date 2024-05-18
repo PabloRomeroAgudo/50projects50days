@@ -24,9 +24,10 @@ Projects are from the repository [50projects50days](https://github.com/bradtrave
 | 15  | [Increment counter](./projects/15-increment-counter/ "Increment counter")          |
 | 16  | [Drink water](./projects/16-drink-water/ "Drink water")                            |
 | 17  | [Movie app](./projects/17-movie-app/ ":/")                                         |
-| 18  | [Background slider](./projects/18-background-slider/ ":("                          |
+| 18  | [Background slider](./projects/18-background-slider/ ":(")                         |
 | 19  | [Theme clock](./projects/19-theme-clock/ "Theme clock")                            |
 | 20  | [Button ripple effect](./projects/20-button-ripple-effect/ ":/")                   |
+| 22  | [Drawing app](./projects/22-drawing-app/ ":/")                                     |
 
 [^1]:
     If you hover the link it will show the name of the project if I was able to do it,
