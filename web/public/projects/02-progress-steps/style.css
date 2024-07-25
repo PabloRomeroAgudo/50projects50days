@@ -1,0 +1,75 @@
+:root {
+  --active-color: #3498db;
+  --active-color-hover: #328dca;
+  --inactive-color: #e0e0e0;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  color: #8f8f8f;
+  font-weight: 500;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 4px solid var(--inactive-color);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.pactive {
+  border-color: var(--active-color);
+}
+
+.line {
+  background-color: var(--inactive-color);
+  height: 4px;
+  width: 80px;
+  content: '';
+  transition: 0.5s;
+}
+
+.lineactive {
+  background-color: var(--active-color);
+}
+
+.footer {
+  display: flex;
+  gap: 2rem;
+}
+
+button{
+  border: none;
+  color: white;
+  border-radius: 9px;
+  width: 90px;
+  height: 35px;
+  background-color: var(--inactive-color);
+  cursor: not-allowed;
+}
+
+.bactive {
+  background-color: var(--active-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bactive:active {
+  transform: scale(0.95);
+}
+
+.bactive:hover {
+  background-color: var(--active-color-hover);
+  scale: 1.1;
+}

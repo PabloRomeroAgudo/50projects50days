@@ -1,0 +1,22 @@
+---
+const { slug, id, title } = Astro.props
+---
+
+<a
+  href={`${slug}`}
+  class="hover:scale-110 transition duration-300 relative group border border-primary-200 p-2 rounded-lg"
+>
+  <h3
+    class="bg-yellow-400 text-primary-950 px-2 rounded-lg absolute -top-2 left-0 text-base group-hover:scale-150 group-hover:font-bold transition duration-300 group-hover:translate-x-10 -rotate-[20deg] group-visited:bg-green-800 group-visited:text-primary-50"
+  >
+    {id}
+  </h3>
+
+  <picture class="rounded-lg">
+    <img
+      src={`/projects/${slug}/image.jpg`}
+      alt={`Imagen del proyecto ${title}`}
+      class="rounded-lg"
+    />
+  </picture>
+</a>

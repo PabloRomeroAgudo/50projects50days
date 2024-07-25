@@ -1,0 +1,23 @@
+---
+import Github from "../icons/Github.astro"
+const linkGithub = "https://github.com/PabloRomeroAgudo/50projects50days"
+---
+
+<!-- <div class="sticky top-0 backdrop-blur-md"> -->
+<div class="w-full flex flex-col justify-center md:flex-row items-center mt-20">
+  <h1
+    class="text-2xl md:text-4xl otra:text-7xl p-4 font-bold uppercase text-primary-800 text-pretty"
+  >
+    50 proyectos 50 dias
+  </h1>
+  <a
+    href={linkGithub}
+    class="transition duration-300 hover:scale-125 text-primary-800 self-center active:text-primary-900 active:scale-100"
+    target="_blank"
+  >
+    <Github
+      classThings="otra:w-[40px] otra:h-[40px] md:w-[30px] md:h-[30px] w-[20px] h-[20px]"
+    />
+  </a>
+</div>
+<!-- </div> -->

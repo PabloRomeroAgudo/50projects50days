@@ -1,0 +1,21 @@
+---
+import BackToTop from "../components/BackToTop.astro"
+import Hero from "../components/Hero.astro"
+import Projects from "../components/Projects.astro"
+import Title from "../components/Title.astro"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout
+  title="50 projects 50 days por Pablo Romero Agudo🚀"
+  description="Conjunto de 50 proyectos creados con HTML, CSS y JavaScript con el fin de aprender las bases de dichos lenguajes. Todos los proyectos están programados por Pablo Romero Agudo"
+>
+  <main class="w-[80%] flex flex-col pb-8">
+    <div class="flex flex-col gap-28 h-screen">
+      <Title />
+      <Hero />
+    </div>
+    <Projects />
+    <BackToTop />
+  </main>
+</Layout>

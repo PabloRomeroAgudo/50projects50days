@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #eafbff  0%,
+    #eafbff 50%,
+    #5290f9 50%,
+    #5290f9 100%
+  );
+  margin: 0;  
+  height: 100vh;
+  font-family: 'Muli', sans-serif;
+
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+  padding: 25px 30px;
+  background: white;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  width: 350px;
+  font-size: 16px;  
+  transition: width .8s linear;
+}
+
+.deactive {
+  width: 90px;
+  gap: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  transition: 
+    opacity .8s linear,
+    transform .8s linear
+  ;
+}
+
+.deactive .link {
+  transform: rotateY(765deg);
+  opacity: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background: #5290f9;
+
+  position: absolute;
+  top: 10px;
+  left: 5px;
+
+  transition: transform .8s linear;
+}
+
+.line:first-child {
+  transform: rotate(45deg);
+}
+
+.deactive .line:first-child {
+  transform: rotate(720deg) translateY(-5.5px);
+}
+
+.line:last-child {
+  transform: rotate(-45deg);
+}
+
+.deactive .line:last-child {
+  transform: rotate(-720deg) translateY(5.5px);
+}

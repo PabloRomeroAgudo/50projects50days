@@ -1,0 +1,15 @@
+---
+import { projects } from "../lib/projectsInfo"
+import ProjectCard from "./ProjectCard.astro"
+---
+
+<section>
+  <h1
+    class="text-xl otra:text-5xl text-center uppercase font-bold pb-6 text-primary-800"
+  >
+    Proyectos
+  </h1>
+  <div class="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+</section>

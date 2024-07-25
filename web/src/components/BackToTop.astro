@@ -1,0 +1,28 @@
+---
+import ToTop from "../icons/ToTop.astro"
+---
+
+<button
+  class="fixed bottom-4 right-4 bg-primary-50 text-primary-950 p-2 rounded-lg transition duration-300 hover:scale-110 hover:text-primary-50 hover:bg-primary-950 border border-primary-950 opacity-0 pointer-events-none"
+  onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+>
+  <ToTop />
+</button>
+
+<script>
+  const btn = document.querySelector("button")
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 450) {
+      btn.classList.remove("opacity-0")
+      btn.classList.add("opacity-100")
+      btn.classList.remove("pointer-events-none")
+      btn.classList.add("pointer-events-auto")
+    } else {
+      btn.classList.remove("opacity-100")
+      btn.classList.add("opacity-0")
+      btn.classList.remove("pointer-events-auto")
+      btn.classList.add("pointer-events-none")
+    }
+  })
+</script>
