@@ -152,5 +152,12 @@ export const projects = [
     title: "Kinetic loader",
     description: "A kinetic loader animation",
     urlCodigo: "https://github.com/PabloRomeroAgudo/50projects50days/tree/main/projects/23-kinetic-loader"
+  },
+  {
+    id: 52,
+    slug: "52-infinite-scroll-items",
+    title: "Infinite scroll items",
+    description: "An infinite horizontal scroll of items. Like a gallery",
+    urlCodigo: "https://github.com/PabloRomeroAgudo/50projects50days/tree/main/projects/52-infinite-scroll-items"
   }
 ]

@@ -1,0 +1,92 @@
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+}
+
+.wrapper {
+  /* Misma altura que la de los objetos */
+  height: 100px;
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  overflow: hidden;
+
+  counter-reset: numbers;
+
+  /* Para que haya un gradiente de transparencia */
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+.item {
+  display: grid;
+  place-content: center;
+
+  font-size: 2rem;
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+
+  position: absolute;
+  /* Para pantallas pequeñas en las que el width de la ventana es menor que el total de los items queremos otro valor... por eso hacemos el calc para calcular el tamaño del item por el numero de items que tenemos */
+  left: max(calc(150px * 5), 100%);
+
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: scroll-left;
+
+  counter-increment: numbers;
+}
+
+.item::after {
+  content: counter(numbers);
+}
+
+.item-1 {
+  /* Tiempo entre numero de items multiplicado por (el numero total de items - la posicion) */
+  /* Duration * delay * -1 */
+  /* 30s/5    * (5-x) * -1 */
+  /* la division calcula cuanto tiempo de animacion tiene cada item, si son 5... cada item tiene 1/5 */
+  /* multiplicamos por -1 para hacerlo negativo... al poner animation-delay en negativo ocurren 2 cosas:
+     La animacion se ejecuta instantaneamente
+     si pones -10, la animacion empieza en el segundo 10
+  */
+  /* Si no lo ponemos negativo... funcionaria igual pero tardaria en 'cargar' ya que empiezan tarde... asi t aseguras que empiecen desde el principio */
+  animation-delay: calc(30s / 5 * (5 - 1) * -1);
+}
+
+.item-2 {
+  animation-delay: calc(30s / 5 * (5 - 2) * -1);
+}
+
+.item-3 {
+  animation-delay: calc(30s / 5 * (5 - 3) * -1);
+}
+
+.item-4 {
+  animation-delay: calc(30s / 5 * (5 - 4) * -1);
+}
+
+.item-5 {
+  animation-delay: calc(30s / 5 * (5 - 5) * -1);
+}
+
+@keyframes scroll-left {
+  /* Ponemos que termine a la izquierda el tamaño del item para que justo salga de la pantalla */
+  to {
+    left: -150px
+  }
+}
