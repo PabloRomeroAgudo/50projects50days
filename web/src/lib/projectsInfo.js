@@ -159,5 +159,12 @@ export const projects = [
     title: "Infinite scroll items",
     description: "An infinite horizontal scroll of items. Like a gallery",
     urlCodigo: "https://github.com/PabloRomeroAgudo/50projects50days/tree/main/projects/52-infinite-scroll-items"
+  },
+  {
+    id: 53,
+    slug: "53-hover-item-revelation",
+    title: "Hover item revelation",
+    description: "Reveal an item when hovering over it",
+    urlCodigo: "https://github.com/PabloRomeroAgudo/50projects50days/tree/main/projects/53-hover-item-revelation"
   }
 ]

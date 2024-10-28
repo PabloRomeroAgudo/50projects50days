@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100dvh;
+  align-items: center;
+  background-color: #222;
+}
+
+section {
+  counter-reset: number;
+
+  transform-style: preserve-3d;
+  transform: perspective(1500px);
+}
+
+span {
+  counter-increment: number;
+  background-color: #5c89ff;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: -5px;
+  padding: 30px;
+
+  transition: .7s;
+
+  filter: brightness(0);
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+span::after {
+  content: counter(number);
+}
+
+span:hover {
+  transform: translateZ(200px);
+  box-shadow: 0 0 15px 3px #5c89ff99
+  ;
+  filter: brightness(1);
+}
+
+span:active {
+  transform: translateZ(150px);
+}
+
+@keyframes colors {
+  from {
+    filter: hue-rotate(0deg) brightness(var(--i));
+  }
+  to {
+    filter: hue-rotate(360deg) brightness(var(--i));
+  }
+}
+
+span:hover + span {
+  --i: .7;
+  transform: translateZ(100px) rotateY(40deg);
+  animation: colors 3.5s infinite;
+  animation-delay: calc(3.5s / 6 * (6 - 4) * -1);
+}
+
+span:hover + span + span {
+  --i: .5;
+  transform: translateZ(50px) rotateY(20deg);
+  animation: colors 3.5s infinite;
+  animation-delay: calc(3.5s / 6 * (6 - 5) * -1);
+}
+
+span:hover + span + span + span {
+  --i: .3;
+  animation: colors 3.5s infinite;
+  animation-delay: calc(3.5s / 6 * (6 - 6) * -1);
+}
+
+span:has( + span:hover) {
+  --i: .7;
+  transform: translateZ(100px) rotateY(-40deg); 
+  animation: colors 3.5s infinite; 
+  animation-delay: calc(3.5s / 6 * (6 - 3) * -1);
+}
+
+
+span:has(+ span + span:hover) {
+  --i: .5;
+  transform: translateZ(50px) rotateY(-20deg);
+  animation: colors 3.5s infinite;
+  animation-delay: calc(3.5s / 6 * (6 - 2) * -1);
+}
+
+span:has(+ span + span + span:hover) {
+  --i: .3;
+  animation: colors 3.5s infinite;
+  animation-delay: calc(3.5s / 6 * (6 - 1) * -1);
+}
